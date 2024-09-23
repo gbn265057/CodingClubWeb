@@ -6,6 +6,7 @@ function Card(pops) {
         <div className="card">
             <h2 className ="card-title"> {pops.name} </h2>
             <p className = "card-text">{pops.subtext}</p>
+            <p><strong><a href={pops.link}>See more</a></strong></p>
         </div>
     );
 }

@@ -1,6 +1,8 @@
-import Yip from "./assets/pixilart-drawing.png"
+import Yip from "./assets/pixil-frame-0.png"
 
 function Center() {
+   
+
     return (
         <div className = "center container">
             <img className = "yippee"src={Yip}></img>
