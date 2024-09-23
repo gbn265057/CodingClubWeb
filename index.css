@@ -78,8 +78,8 @@ a {
   z-index: 10;
 }
 .navbar.active{
-  transition-duration: 1s;
   background: linear-gradient(90deg,rgba(10, 115, 113, 0.984) 0%,rgb(10, 115, 113, 0.984) 100% );
+  transition-duration: 1s;
 
 }
 
@@ -111,19 +111,33 @@ a {
 .center{
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(rgb(2, 51, 49, 0.5),rgb(2, 51, 49, 0.5)), url('./assets/Microsoft_Nostalgic_Windows_Wallpaper_4k.jpg');
+  background: linear-gradient( rgb(2, 51, 49, 0.5)  0% ,rgb(2, 51, 49, 0.5))  100%, url('./assets/CodingClubWindow_2024.JPG');
+  mask-image: linear-gradient(to top, transparent 5%, black 12%);
   background-size: cover;
   background-position: center;
   color:white;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  animation: fade-out linear;
+  animation-timeline: view();
+  animation-range: exit -50px;
+  animation-iteration-count: 1;
 }
 
 .center-text {
   text-align:right;
   max-width:800px ;
 }
+
+@keyframes fade-out {
+  to{opacity: 0;}
+  25% {background-image: transparent 0%;}
+  85%, 100% {background-image: transparent 100%;}
+}
+
+
 
 .center-text h1{
   font-size: 80px;
@@ -139,8 +153,8 @@ a {
 
 .yippee{
   max-height: 500px;
-  height:50%;
-  width:30%;
+  height:60%;
+  width:40%;
   margin-right: 10%;
 }
 
@@ -154,7 +168,14 @@ a {
   border-radius:12px;
   background-color:rgba(136, 197, 195, 0.5);
   margin: 10px auto 10px auto;
+  
 }
+
+@keyframes fade-in {
+  from{scale:.8;}
+  to {scale: 1; opacity: 1;}
+}
+
 
 .btn:hover{
   transition-duration: 0.5s;
@@ -212,6 +233,10 @@ li:hover {
   background-color: #fbe16e ;
   border-top-right-radius: 50px;
   border-bottom-left-radius: 50px;
+  animation: fade-in linear;
+  animation-timeline: scroll();
+  animation-range:normal;
+  
 }
 
 .contact form{
@@ -224,10 +249,12 @@ li:hover {
 .oneline{
   padding:15px;
   margin-bottom:5%;
+  font-size: large;
 }
 
 .multiline {
   padding:15px 15px 100px 15px;
+  font-size: large;
 }
 .yop{
   align-items: center;
