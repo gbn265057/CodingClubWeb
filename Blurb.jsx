@@ -1,5 +1,5 @@
 function Blurb() {
-    const blurb1 = "Hiiiiiiiiiiii";
+    const blurb1 = "Hiiiiiiiiiiii"
     const blurb2 = "byeeeeee";
 
     return(
