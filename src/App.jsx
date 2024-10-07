@@ -22,6 +22,7 @@ function App() {
     </Card>
     <Card link = "https://drive.google.com/file/d/1hPf2aDMfT5gDCOPNDj3ioyWxND4FGmYA/view" name = "9/16/24 - Paint the Town!" subtext="Painted a window in Downtown Northbrook for our club!"></Card>
     <Card name = "9/23/24 - Introduction to Python and Github" subtext="Created Collatz conjecture in python" link ="https://docs.google.com/presentation/d/1ZtsqtGZKWqgwvfEcOOa8sRXd1WmI4M7TcWcLamOOj1M/edit#slide=id.p"></Card>
+    <Card name = "9/30/24 - First Python Project and More GitHub" subtext="Created dice game in python, first push in GitHub" link ="https://github.com/Juhplux/CodingclubMega_repo"></Card>
     </div>
     <div id = "idea">
       <Contact></Contact>
