@@ -4,7 +4,7 @@ function Blurb() {
 
     return(
     <div className="events">
-        <button className = "btn"><h2> Upcoming events: October Game Jam!</h2></button>
+        <button className = "btn"><h2> Upcoming events: Making PCBs!</h2></button>
     </div>
     );
 }
