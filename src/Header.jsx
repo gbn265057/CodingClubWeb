@@ -18,7 +18,7 @@ function Header(){
     return(
         <nav className="container"> 
         <div className = {navbar ? 'navbar active' : 'navbar'}>
-            <img className ="logo"src ={logo} ></img>
+            <a href="#home"><img className="logo" src={logo}></img></a>
             <ul>
                 <li class = "different"><a href = "#home">Home</a></li>
                 <li class = "different"> <a href = "#proj">Projects</a></li>
